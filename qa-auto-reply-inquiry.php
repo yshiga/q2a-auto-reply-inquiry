@@ -1,6 +1,6 @@
 <?php
 
-require_once QA_PLUGIN_DIR.'q2a-auto-reply-inauiry/ari-send-mail.php';
+require_once QA_PLUGIN_DIR.'q2a-auto-reply-inquiry/ari-send-mail.php';
 
 class qa_auto_reply_inquiry
 {
