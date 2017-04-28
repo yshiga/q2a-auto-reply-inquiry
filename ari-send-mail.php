@@ -36,7 +36,7 @@ class ari_send_mail
 		$body .= "ユーザー登録後に以下のページから質問を投稿してください。\n\n";
 
 		$body .= "質問投稿ページ：\n";
-		$body .= qa_path('ask') . "\n\n";
+		$body .= qa_path('ask', null, qa_opt('site_url')) . "\n\n";
 
 		$body .= "------- お問い合わせ内容 ------\n";
 		$body .= "コメント:\n";
