@@ -18,5 +18,7 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 	exit;
 }
 
+// language
+qa_register_plugin_phrases('qa-auto-reply-inquiry-lang-*.php', 'auto_reply_inquiry_lang');
 // event
 qa_register_plugin_module('event', 'qa-auto-reply-inquiry.php', 'qa_auto_reply_inquiry', 'Auto Reply Inquiry Event');
