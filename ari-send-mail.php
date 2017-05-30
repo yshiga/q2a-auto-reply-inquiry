@@ -18,7 +18,7 @@ class ari_send_mail
 		$this->params['fromemail'] = qa_opt('from_email');
 		$this->params['fromname'] = qa_opt('site_title');
 		$this->params['toemail'] = $inparams['email'];
-		$this->params['subject'] = '【' . qa_opt('site_title') . '】お問い合わせありがとうございます(自動返信)';
+		$this->params['subject'] = qa_lang_html_sub('auto_replay_inquiry_lang/subject', qa_opt('site_title'));
 		$this->params['body'] = $this->body_create($inparams, $ipaddress);
 		$this->params['toname'] = $inparams['name'];
 		$this->params['html'] = false;
